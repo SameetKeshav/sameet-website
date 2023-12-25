@@ -10,6 +10,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>React</li>
+        <li>Angular</li>
         <li>Next.js</li>
         <li>NestJS</li>
         <li>MySQL</li>
@@ -17,7 +18,12 @@ const TAB_DATA = [
         <li>Python</li>
         <li>Java</li>
         <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>C#</li>
         <li>HTML</li>
+        <li>PHP</li>
         <li>CSS</li>
       </ul>
     ),
@@ -27,7 +33,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>BSc Computer Science</li>
+        <li>National Senior Certificate - Curro Thatchfield, South Africa (2020)</li>
+        <li>BSc Computer Science - University of Pretoria, South Africa (2023)</li>
       </ul>
     ),
   },
@@ -36,7 +43,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Microsoft Associate Technology Certificate</li>
+        <li>MTA - Microsoft Software Development Fundamentals (2019)</li>
+        <li>Mathworks Deep Learning Onramp (2023)</li>
+        <li>Mathworks Machine Learning Onramp (2023)</li>
       </ul>
     ),
   },
@@ -45,7 +54,8 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Epi-Use Labs</li>
+        <li>Part Time - The IT Advantage (09/2021 - 12/2022)</li>
+        <li>Associate Software Engineer - Epi-Use Labs (01/2024 - Present)</li>
       </ul>
     ),
   },
@@ -62,7 +72,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.png"
@@ -73,10 +83,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quis,
-            voluptates autem dolor error nulla molestias repellendus mollitia
-            iste dolorum facere sequi quos! Quasi mollitia eos, necessitatibus
-            qui hic vitae.
+          I’m a Software Engineer with a BSc Computer Science Degree. In my free time I am always trying to learn new Languages and Frameworks and putting these skills to use by creating small to medium sized projects.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

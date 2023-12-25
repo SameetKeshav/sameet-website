@@ -7,14 +7,13 @@ const fromEmail = process.env.FROM_EMAIL;
 const toEmail = process.env.TO_EMAIL;
 
 export async function POST(req, res) {
-  const { body } = req.json();
-  const { email, subject, message } = body;
+  const { email, subject, message } = req.json();
 
   try {
     const data = await resend.emails.send({
       from: fromEmail,
       to: [email, toEmail],
-      subject: 'Hello world',
+      subject: {subject},
       react: ( 
         <>
           <h1>

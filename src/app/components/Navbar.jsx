@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
+import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const navLinks = [
@@ -30,7 +31,12 @@ const Navbar = () => {
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={75}
+              height={75}
+            />
         </Link>
         <div className=" block md:hidden">
           {!navbarOpen ? (
