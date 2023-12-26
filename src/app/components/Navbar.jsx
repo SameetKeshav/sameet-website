@@ -5,23 +5,25 @@ import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
     title: "About",
-    path: "#about",
+    path: "about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "contact",
   },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
@@ -59,7 +61,7 @@ const Navbar = () => {
           <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink href={`${pathname}#${link.path}`} title={link.title} />
               </li>
             ))}
           </ul>

@@ -43,7 +43,7 @@ const EmailSection = () => {
       </div>
       <div>
         <h5 className="text-xl font-bold text-white my-2">
-          Let's Connect
+          Let`s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
@@ -58,7 +58,7 @@ const EmailSection = () => {
           </Link>
         </div>
       </div>
-      <div>
+      {/* <div>
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
@@ -112,7 +112,7 @@ const EmailSection = () => {
             )
           }
         </form>
-      </div>
+      </div> */}
     </section>
   )
 }
