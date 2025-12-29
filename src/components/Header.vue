@@ -1,9 +1,11 @@
-<template>
+s<template>
   <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-sm">
     <nav class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- Logo / Name -->
-      <router-link to="/" @click.prevent="scrollTo('hero')" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">
-        Sameet Keshav
+      <router-link to="/" @click.prevent="scrollTo('hero')" class="flex items-center space-x-3">
+       <img src="/images/logo.png" alt="Logo"
+             class="w-10 h-10 rounded-md object-cover border-1 border-indigo-600 dark:border-indigo-400"/>
+        <span class="text-xl font-bold text-indigo-600 dark:text-indigo-400">Sameet Keshav</span>
       </router-link>
 
       <!-- Nav links (smooth scroll) -->
