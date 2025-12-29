@@ -26,22 +26,14 @@ jobs:
       - name: Build
         run: npm run build
             
-      - name: Deploy to Firebase Hosting
+      - name: Setup Firebase
         uses: w9jds/setup-firebase@main
-        env:
-          PROJECT_ID: ${{secrets.PROJECT_ID}}
         with:
           tools-version: 15.1.0
           firebase_token: ${{ secrets.FIREBASE_TOKEN }}
-      - run: firebase experiments:enable webframeworks
-      - run: firebase deploy --only hosting
 
+      - name: Firebase Enable Web Frameworks
+        run: firebase experiments:enable webframeworks
 
-
-
-        # uses: w9jds/firebase-action@v15.1.0
-        # with:
-        #   args: deploy --only hosting
-        # env:
-        #   FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        #   PROJECT_ID: ${{secrets.PROJECT_ID}}
+      - name: Firebase Deploy
+        run: firebase deploy --only hosting --project ${{secrets.PROJECT_ID}}
