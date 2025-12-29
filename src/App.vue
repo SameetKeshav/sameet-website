@@ -7,8 +7,9 @@
     <main class="flex-grow container mx-auto px-4 py-8 space-y-16">
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
       <ExperienceSection />
+      <CertificationSection />
+      <SkillsSection />
       <ProjectsSection />
       <ContactSection />
     </main>
@@ -27,4 +28,5 @@ import ProjectsSection from '@/views/ProjectsSection.vue'
 import ContactSection from '@/views/ContactSection.vue'
 import Footer from '@/components/Footer.vue'
 import ExperienceSection from './views/ExperienceSection.vue'
+import CertificationSection from './views/CertificationSection.vue'
 </script>
