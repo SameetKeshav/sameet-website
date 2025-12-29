@@ -8,6 +8,7 @@
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
       <ContactSection />
     </main>
@@ -25,4 +26,5 @@ import SkillsSection from '@/views/SkillsSection.vue'
 import ProjectsSection from '@/views/ProjectsSection.vue'
 import ContactSection from '@/views/ContactSection.vue'
 import Footer from '@/components/Footer.vue'
+import ExperienceSection from './views/ExperienceSection.vue'
 </script>
