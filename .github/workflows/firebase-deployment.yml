@@ -12,10 +12,10 @@ jobs:
       name: production
 
     steps:
-      - uses: actions/checkout@latest
+      - uses: actions/checkout@v6
 
       - name: Use Node.js
-        uses: actions/setup-node@latest
+        uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'   # or specify a string like '20.x'
           cache: npm
@@ -27,7 +27,7 @@ jobs:
         run: npm run build
             
       - name: Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@latest
+        uses: w9jds/firebase-action@v15.1.0
         with:
           args: deploy --only hosting
         env:
