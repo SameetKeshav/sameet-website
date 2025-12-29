@@ -25,12 +25,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        
-      - name: Enable Firebase Web Frameworks experiment
-        run: firebase experiments:enable webframeworks
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: ${{secrets.PROJECT_ID}}
             
       - name: Deploy to Firebase Hosting
         uses: w9jds/firebase-action@v2.1.0

@@ -9,5 +9,9 @@
     "frameworksBackend": {
       "region": "europe-west1"
     }
+  },
+   "webFrameworks": {
+    "framework": "vite",
+    "outputDirectory": "dist" 
   }
 }
