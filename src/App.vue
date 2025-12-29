@@ -11,7 +11,7 @@
       <CertificationSection />
       <SkillsSection />
       <ProjectsSection />
-      <ContactSection />
+      <!-- <ContactSection /> -->
     </main>
 
     <!-- Footer -->

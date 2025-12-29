@@ -14,9 +14,9 @@
       <a href="#projects" @click.prevent="scrollTo('projects')" class="px-6 py-3 rounded bg-indigo-600 text-white hover:bg-indigo-700 transition">
         View Projects
       </a>
-      <a href="#contact" @click.prevent="scrollTo('contact')" class="px-6 py-3 rounded border border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition">
+      <!-- <a href="#contact" @click.prevent="scrollTo('contact')" class="px-6 py-3 rounded border border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition">
         Get in Touch
-      </a>
+      </a> -->
     </div>
   </section>
 </template>
